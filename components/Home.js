@@ -1,6 +1,5 @@
 import { SafeAreaView, StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import AutocompleteInput from 'react-native-autocomplete-input';
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 
@@ -81,7 +80,7 @@ const Home = ({ navigation, route }) => {
                     <Icon name='calendar-range' size={35} color='#86b257'/>
                 </View>
                 <TextInput 
-                placeholder='Tanggal Keberangkatan'
+                placeholder='dd-mm-yyyy'
                 value={tgl}
                 onChangeText={
                     (value) => {
